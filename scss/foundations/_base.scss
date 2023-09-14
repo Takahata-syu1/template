@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: normal;
+    color: #1a1a1a;
+    line-height: 1.6em;
+    font-size: 1.6rem;
+}
+
+//-------- 全体のくくり --------
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+//-------- 404 --------
+.contant404 {
+    display: block;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+
+    h3 {
+        font-size: 2.4rem;
+        margin-bottom: 24px;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    a {
+        color: #fff;
+        margin: 32px 0;
+        background-color: #007c3e;
+        display: inline-block;
+        padding: 8px 16px;
+    }
+}

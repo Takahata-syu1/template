@@ -1,0 +1,67 @@
+.serif {
+    font-family: 'Noto Serif JP', serif;
+}
+
+.Bebas-Neue-p {
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Bebas-Neue {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+.sp {
+    display: none;
+}
+
+.pc-br {
+    display: block;
+}
+
+.sp-br {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@include sp {
+    .sp {
+        display: block;
+
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp-br {
+        display: block;
+    }
+
+    .pc-br {
+        display: none;
+    }
+}

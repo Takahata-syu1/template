@@ -1,0 +1,621 @@
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.serif {
+  font-family: "Noto Serif JP", serif;
+}
+
+.Bebas-Neue-p {
+  font-family: "bebas-neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Bebas-Neue {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+.sp {
+  display: none;
+}
+
+.pc-br {
+  display: block;
+}
+
+.sp-br {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+  .sp-br {
+    display: block;
+  }
+  .pc-br {
+    display: none;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: normal;
+  color: #1a1a1a;
+  line-height: 1.6em;
+  font-size: 1.6rem;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contant404 {
+  display: block;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contant404 h3 {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+.contant404 span {
+  display: block;
+  margin-bottom: 24px;
+}
+.contant404 a {
+  color: #fff;
+  margin: 32px 0;
+  background-color: #007c3e;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.burger-btn-bg {
+  background-color: #000;
+  padding: 3px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: none;
+  position: relative;
+  z-index: 999;
+  position: fixed;
+  right: 9px;
+  top: 28px;
+}
+@media screen and (max-width: 1080px) {
+  .burger-btn-bg {
+    display: block;
+  }
+}
+.burger-btn-bg .burger-btn {
+  width: 39px;
+  height: 39px;
+  position: relative;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  border: none;
+}
+.burger-btn-bg .burger-btn .bar {
+  width: 20px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.burger-btn-bg .burger-btn .bar_top {
+  top: 10px;
+}
+.burger-btn-bg .burger-btn .bar_mid {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger-btn-bg .burger-btn .bar_bottom {
+  bottom: 10px;
+}
+.burger-btn-bg .burger-btn.close .bar_top {
+  transform: translate(-50%, 10px) rotate(45deg);
+  transition: transform 0.3s;
+}
+.burger-btn-bg .burger-btn.close .bar_mid {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.burger-btn-bg .burger-btn.close .bar_bottom {
+  transform: translate(-50%, -8px) rotate(-45deg);
+  transition: transform 0.3s;
+}
+
+.burger-nav__wrapper {
+  display: none;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+  border-radius: 6px;
+}
+.burger-nav__wrapper .arche-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.burger-nav__wrapper__content {
+  padding: 0 0 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.burger-nav__wrapper__content .body {
+  width: 100%;
+}
+.burger-nav__wrapper__content .body .golf-ball-img img {
+  width: 70px;
+  height: 76px;
+}
+.burger-nav__wrapper__content .body .list-outer {
+  position: relative;
+  padding-bottom: 32px;
+  max-width: 340px;
+  margin: 0 auto 24px;
+}
+.burger-nav__wrapper__content .body .list-outer ul li {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  padding-right: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.burger-nav__wrapper__content .body .list-outer ul li a {
+  height: 70px;
+  letter-spacing: 0.03em;
+  line-height: 64px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.burger-nav__wrapper__content .body .list-outer .yashinoki {
+  position: absolute;
+  bottom: 0;
+}
+.burger-nav__wrapper__content .body .list-outer .yashinoki img {
+  width: 83px;
+  height: 93px;
+}
+.burger-nav__wrapper__content .body .list-outer .yashinoki.yashinoki-left {
+  left: 0;
+}
+.burger-nav__wrapper__content .body .list-outer .yashinoki.yashinoki-right {
+  right: 0;
+}/*# sourceMappingURL=common.css.map */
