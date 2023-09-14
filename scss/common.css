@@ -618,4 +618,18 @@ body {
 }
 .burger-nav__wrapper__content .body .list-outer .yashinoki.yashinoki-right {
   right: 0;
+}
+
+.serif {
+  font-family: "Noto Serif JP", serif;
+}
+
+.Bebas-Neue-p {
+  font-family: "bebas-neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Bebas-Neue {
+  font-family: "Bebas Neue", sans-serif;
 }/*# sourceMappingURL=common.css.map */
